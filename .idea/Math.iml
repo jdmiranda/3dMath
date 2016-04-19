@@ -47,10 +47,10 @@
       <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Vector_Test/lib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Vector/Vector.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Vector/Math.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Vector/Math3D.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Vector/Vector.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Vector/CMakeLists.txt" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Vector/Math.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Vector/Math3D.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/example.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/DownloadProject.CMakeLists.cmake.in" isTestSource="false" />

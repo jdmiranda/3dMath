@@ -1,3 +1,2 @@
 #define Math_VERSION_MAJOR @Math_VERSION_MAJOR@
 #define Math_VERSION_MINOR @Math_VERSION_MINOR@
-#cmakedefine USE_VECTORS

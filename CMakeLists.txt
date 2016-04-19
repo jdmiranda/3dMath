@@ -16,7 +16,6 @@ include_directories("${PROJECT_BINARY_DIR}")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 set(SOURCE_FILES main.cpp )
-#add_library(Vector Vector/Math.cpp Vector/Math.h Vector/Vector.cpp Vector/Vector.h )
 
 
 
@@ -25,7 +24,6 @@ option (USE_VECTORS
         "Use tutorial provided math implementation" ON)
 
 # add the Vectors library?
-#
 if (USE_VECTORS)
     include_directories("${PROJECT_SOURCE_DIR}/Vector")
     add_subdirectory(Vector)

@@ -2,14 +2,15 @@
 // Created by JEREMY Miranda on 4/18/16.
 //
 
-#ifndef MATH_MATH_H
-#define MATH_MATH_H
+#ifndef MATH_MATH3D_H
+#define MATH_MATH3D_H
 
 
 #include "Vector.h"
 #include <vector>
+#include <math.h>
 
-  class Math {
+  class Math3D {
 public:
 
 	  /**
@@ -61,4 +62,4 @@ public:
   };
 
 
-#endif //MATH_MATH_H
+#endif //MATH_MATH3D_H

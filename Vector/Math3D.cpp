@@ -2,32 +2,31 @@
 // Created by JEREMY Miranda on 4/18/16.
 //
 
-#include "Math.h"
-#include<math.h>
+#include <Math3D.h>
 
 
 
-  float Math:: Dot(float a, float b)
+float Math3D:: Dot(float a, float b)
 {
     return a * b;
 }
 
-  float Math::Product(float a, float b, float c = 0.0f)
+  float Math3D::Product(float a, float b, float c = 0.0f)
 {
     return a + b + c;
 }
 
- float Math::Cross(float a, float b)
+ float Math3D::Cross(float a, float b)
 {
     return a - b;
 }
 
-float Math:: Dot(Vector p, Vector q)
+float Math3D:: Dot(Vector p, Vector q)
 {
     return Product(Dot(p.X, q.X), Dot(p.Y, q.Y), Dot(p.Z, q.Z));
 }
 
-Vector Math::Cross(Vector p, Vector q) {
+Vector Math3D::Cross(Vector p, Vector q) {
     float x = Cross(Dot(p.Y, q.Z), Dot(p.Z, q.Y));
     float y = Cross(Dot(p.Z, q.X), Dot(p.X, q.Z));
     float z = Cross(Dot(p.X, q.Y), Dot(p.Y, q.X));
@@ -35,17 +34,17 @@ Vector Math::Cross(Vector p, Vector q) {
 
 }
 
-float Math::Magnitude(Vector v) {
+float Math3D::Magnitude(Vector v) {
     float p = 2.0f;
     return sqrtf(pow(v.X,p) + pow(v.Y,p) + pow(v.Z,p));
 }
 
-float Math::Mag(Vector v)
+float Math3D::Mag(Vector v)
 {
     return Magnitude(v);
 }
 
-bool Math::IsOrthonormal(Vector p, Vector q) {
+bool Math3D::IsOrthonormal(Vector p, Vector q) {
     int i = 0;
     if (p == q)
         i = 1;
@@ -53,7 +52,7 @@ bool Math::IsOrthonormal(Vector p, Vector q) {
     return (Dot(p,q) == i);
 }
 
-bool Math::IsOrthonormal(std::vector<Vector> v)
+bool Math3D::IsOrthonormal(std::vector<Vector> v)
 {
     long length = v.size();
     if (length <= 0) return true;
@@ -76,31 +75,31 @@ bool Math::IsOrthonormal(std::vector<Vector> v)
     }
 }
 
-Vector Math::Proj(Vector p, Vector q) {
+Vector Math3D::Proj(Vector p, Vector q) {
    return Mul(Div(Dot(p, q), Sqr(Mag(q))), q);
 }
 
-Vector Math::Perp(Vector p, Vector q) {
+Vector Math3D::Perp(Vector p, Vector q) {
    return Less(p, Proj(p,q));
 }
 
-float Math::Sqr(float a) {
+float Math3D::Sqr(float a) {
     return powf(a, 2.0f);
 }
 
-float Math::Div(float a, float b) {
+float Math3D::Div(float a, float b) {
     return a/b;
 }
 
-Vector Math::Mul(float a, Vector v) {
+Vector Math3D::Mul(float a, Vector v) {
     return Vector(Dot(v.X, a), Dot(v.Y, a), Dot(v.Z, a));
 }
 
-Vector Math::Less(Vector p, Vector q) {
+Vector Math3D::Less(Vector p, Vector q) {
     return More(p, Mul(-1.0f, q));
 }
 
-Vector Math::More(Vector p, Vector q) {
+Vector Math3D::More(Vector p, Vector q) {
     return Vector(p.X + q.X, p.Y + q.Y, p.Z + q.Z);
 }
 
