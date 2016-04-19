@@ -126,7 +126,7 @@ return orthoNormalBasis;
 
 Vector Math3D::Normalize(Vector v)
 {
-    return Mul(Div(Sum(v), Magnitude(v)), v);
+    return Mul(1.0f/Mag(v), v);
 }
 
 float Math3D::Sum(Vector v)

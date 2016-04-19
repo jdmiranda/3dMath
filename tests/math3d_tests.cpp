@@ -1,18 +1,18 @@
 #include <Math3D.h>
 #include "gtest/gtest.h"
 
-TEST(math3d_tests, Dot)
+TEST(math_tests, Dot)
 {
     Vector p = Vector(2, 2, 1);
     Vector q = Vector(1, -2, 0);
 
     float actual = Math3D::Dot(p,q);
-    float expect = -2;
+    float expect = -2.0f;
 
-    EXPECT_EQ(expect, actual);
+    EXPECT_FLOAT_EQ(expect, actual);
 }
 
-TEST(math3d__tests, Cross)
+TEST(math_tests, Cross)
 {
     Vector p = Vector(2, 2, 1);
     Vector q = Vector(1, -2, 0);
@@ -20,19 +20,19 @@ TEST(math3d__tests, Cross)
     Vector actual = Math3D::Cross(p,q);
     Vector expect = Vector(2, 1, -6);
 
-    EXPECT_EQ(expect.X, actual.X);
-    EXPECT_EQ(expect.Y, actual.Y);
-    EXPECT_EQ(expect.Z, actual.Z);
+    EXPECT_FLOAT_EQ(expect.X, actual.X);
+    EXPECT_FLOAT_EQ(expect.Y, actual.Y);
+    EXPECT_FLOAT_EQ(expect.Z, actual.Z);
 }
 
-TEST(math3d_tests, Magnitude)
+TEST(math_tests, Magnitude)
 {
     Vector v = Vector(2, 2, 1);
 
-    float expect = 3;
+    float expect = 3.0f;
     float actual = Math3D::Mag(v);
 
-    EXPECT_EQ(expect, actual);
+    EXPECT_FLOAT_EQ(expect, actual);
 }
 
 TEST(math_tests, IsOrthonormal)
@@ -58,9 +58,9 @@ TEST(math_tests, Projection)
     Vector expect = Vector (x, y, z);
     Vector actual = Math3D::Proj(q,p);
 
-    EXPECT_EQ(expect.X, actual.X);
-    EXPECT_EQ(expect.Y, actual.Y);
-    EXPECT_EQ(expect.Z, actual.Z);
+    EXPECT_FLOAT_EQ(expect.X, actual.X);
+    EXPECT_FLOAT_EQ(expect.Y, actual.Y);
+    EXPECT_FLOAT_EQ(expect.Z, actual.Z);
 }
 
 TEST(math_tests, Perpindicular) {
@@ -73,9 +73,9 @@ TEST(math_tests, Perpindicular) {
     Vector expect = Vector(x, y, z);
     Vector actual = Math3D::Perp(q, p);
 
-    EXPECT_EQ(expect.X, actual.X);
-    EXPECT_EQ(expect.Y, actual.Y);
-    EXPECT_EQ(expect.Z, actual.Z);
+    EXPECT_FLOAT_EQ(expect.X, actual.X);
+    EXPECT_FLOAT_EQ(expect.Y, actual.Y);
+    EXPECT_FLOAT_EQ(expect.Z, actual.Z);
 }
 
 TEST(math_tests, More)
@@ -86,9 +86,9 @@ TEST(math_tests, More)
     Vector expect = Vector (3, 3, 3);
     Vector actual = Math3D::More(p, q);
 
-    EXPECT_EQ(expect.X, actual.X);
-    EXPECT_EQ(expect.Y, actual.Y);
-    EXPECT_EQ(expect.Z, actual.Z);
+    EXPECT_FLOAT_EQ(expect.X, actual.X);
+    EXPECT_FLOAT_EQ(expect.Y, actual.Y);
+    EXPECT_FLOAT_EQ(expect.Z, actual.Z);
 }
 
 TEST(math_tests, Less)
@@ -99,9 +99,9 @@ TEST(math_tests, Less)
     Vector expect = Vector (1, 1, 1);
     Vector actual = Math3D::Less(q, p);
 
-    EXPECT_EQ(expect.X, actual.X);
-    EXPECT_EQ(expect.Y, actual.Y);
-    EXPECT_EQ(expect.Z, actual.Z);
+    EXPECT_FLOAT_EQ(expect.X, actual.X);
+    EXPECT_FLOAT_EQ(expect.Y, actual.Y);
+    EXPECT_FLOAT_EQ(expect.Z, actual.Z);
 }
 
 TEST(math_tests, Mul)
@@ -112,9 +112,9 @@ TEST(math_tests, Mul)
     Vector expect = Vector (0.5f, 1.0f, 0.25f);
     Vector actual = Math3D::Mul(scalar, p);
 
-    EXPECT_EQ(expect.X, actual.X);
-    EXPECT_EQ(expect.Y, actual.Y);
-    EXPECT_EQ(expect.Z, actual.Z);
+    EXPECT_FLOAT_EQ(expect.X, actual.X);
+    EXPECT_FLOAT_EQ(expect.Y, actual.Y);
+    EXPECT_FLOAT_EQ(expect.Z, actual.Z);
 }
 
 TEST(math_tests, MakeOrthoNormal)
@@ -124,7 +124,7 @@ TEST(math_tests, MakeOrthoNormal)
     std::vector<Vector> collection = {p,q};
 }
 
-TEST(math_tests, Orthogonalize01)
+TEST(math_tests, Normalize01)
 {
     float x = sqrtf(2.0f)/2.0f;
     float y = x;
@@ -136,7 +136,7 @@ TEST(math_tests, Orthogonalize01)
     Vector expect = Vector(x,y,z);
     collection[0] = Math3D::Normalize(v);
     Vector actual = collection[0];
-    EXPECT_EQ(expect.X, actual.X);
-    EXPECT_EQ(expect.Y, actual.Y);
-    EXPECT_EQ(expect.Z, actual.Z);
+    EXPECT_FLOAT_EQ(expect.X, actual.X);
+    EXPECT_FLOAT_EQ(expect.Y, actual.Y);
+    EXPECT_FLOAT_EQ(expect.Z, actual.Z);
 }
