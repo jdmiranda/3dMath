@@ -62,6 +62,14 @@ if (CMAKE_VERSION VERSION_LESS 2.8.11)
 endif()
 
 # Trivial example using gtest and gmock
-add_executable(example example.cpp)
+add_executable(example tests/example.cpp)
 target_link_libraries(example gtest gmock_main)
 add_test(NAME example_test COMMAND example)
+
+add_executable(vector_tests tests/vector_tests.cpp)
+target_link_libraries(vector_tests gtest gmock_main Vector)
+add_test(NAME vector_test COMMAND vectorTests)
+
+add_executable(math3d_tests tests/math3d_tests.cpp)
+target_link_libraries(math3d_tests gtest gmock_main Vector)
+add_test(NAME math3d_test COMMAND vectorTests)

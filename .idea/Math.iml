@@ -46,12 +46,14 @@
       <sourceFolder url="file://$MODULE_DIR$/MathConfig.h.in" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Vector_Test/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tests/example.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tests/math3d_tests.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tests/vector_tests.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Vector/Vector.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Vector/Math3D.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Vector/Vector.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Vector/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Vector/Math3D.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/example.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/DownloadProject.CMakeLists.cmake.in" isTestSource="false" />
     </content>
