@@ -29,7 +29,7 @@ TEST(vector_tests, AreEqual)
     bool expect = true;
     bool actual = p == q;
 
-    EXPECT_EQ(expect, acutal);
+    EXPECT_EQ(expect, actual);
 }
 
 TEST(vector_tests, AreNotEqual)
@@ -37,7 +37,7 @@ TEST(vector_tests, AreNotEqual)
     Vector p = Vector(1,0,1);
     Vector q = Vector(1.0f,1.0f,1.0f);
 
-    bool expect = false;
+    bool expect = true;
     bool actual = p != q;
 
     EXPECT_EQ(expect, actual);
