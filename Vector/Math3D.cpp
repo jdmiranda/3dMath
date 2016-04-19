@@ -103,6 +103,37 @@ Vector Math3D::More(Vector p, Vector q) {
     return Vector(p.X + q.X, p.Y + q.Y, p.Z + q.Z);
 }
 
+std::vector<Vector> Math3D::MakeOrthoNormal(std::vector<Vector> collection)
+{
+    int length = collection.size();
+
+    if (length < 0)
+        return collection;
+
+    std::vector<Vector> orthoNormalBasis;
+    orthoNormalBasis.push_back(Normalize(collection[0]));
+
+    if (length > 1)
+    {
+        for (int i = 1; i < collection.size(); i++)
+        {
+          orthoNormalBasis.push_back(Less( collection[i], Proj(orthoNormalBasis[i-1], collection[i])));
+
+        }
+    }
+return orthoNormalBasis;
+}
+
+Vector Math3D::Normalize(Vector v)
+{
+    return Mul(Div(Sum(v), Magnitude(v)), v);
+}
+
+float Math3D::Sum(Vector v)
+{
+    return v.X + v.Y + v.Z;
+}
+
 
 
 

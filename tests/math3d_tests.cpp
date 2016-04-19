@@ -1,6 +1,5 @@
 #include <Math3D.h>
 #include "gtest/gtest.h"
-#include <vector.h>
 
 TEST(math3d_tests, Dot)
 {
@@ -113,6 +112,30 @@ TEST(math_tests, Mul)
     Vector expect = Vector (0.5f, 1.0f, 0.25f);
     Vector actual = Math3D::Mul(scalar, p);
 
+    EXPECT_EQ(expect.X, actual.X);
+    EXPECT_EQ(expect.Y, actual.Y);
+    EXPECT_EQ(expect.Z, actual.Z);
+}
+
+TEST(math_tests, MakeOrthoNormal)
+{
+    Vector p = Vector(-1, 1, 0);
+    Vector q = Vector(-1, 0, 1);
+    std::vector<Vector> collection = {p,q};
+}
+
+TEST(math_tests, Orthogonalize01)
+{
+    float x = sqrtf(2.0f)/2.0f;
+    float y = x;
+    float z = 0.0f;
+
+    Vector v = Vector (x,y,z);
+    std::vector<Vector> collection = {v};
+
+    Vector expect = Vector(x,y,z);
+    collection[0] = Math3D::Normalize(v);
+    Vector actual = collection[0];
     EXPECT_EQ(expect.X, actual.X);
     EXPECT_EQ(expect.Y, actual.Y);
     EXPECT_EQ(expect.Z, actual.Z);

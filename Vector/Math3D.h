@@ -57,6 +57,14 @@ public:
        * Returns the result of two vectors.
        */
       static Vector More(Vector p, Vector q);
+/*
+ *
+ * Returns the orthonormal basis for the set using the Gram-Schmidt Orthogonalization
+ */
+      static std::vector<Vector> MakeOrthoNormal(std::vector<Vector> collection);
+      static float Sum(Vector v);
+      static Vector Normalize(Vector v);
+
 
   private:
 	  static float Cross(float a, float b);
@@ -68,10 +76,6 @@ public:
       static bool IsOrthonormal(Vector p, Vector q);
       static float Sqr(float a);
       static float Div(float a, float b);
-
-
-
-
   };
 
 
