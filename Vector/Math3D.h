@@ -43,6 +43,21 @@ public:
        */
         static Vector Perp(Vector p, Vector q);
 
+      /**
+       * Returns a scalar vector.
+       */
+      static Vector Mul(float a, Vector v);
+
+      /**
+       * Returns the difference between two vectors.
+       */
+      static Vector Less(Vector p, Vector q);
+
+      /**
+       * Returns the result of two vectors.
+       */
+      static Vector More(Vector p, Vector q);
+
   private:
 	  static float Cross(float a, float b);
 	  static float Magnitude(Vector v);
@@ -53,9 +68,7 @@ public:
       static bool IsOrthonormal(Vector p, Vector q);
       static float Sqr(float a);
       static float Div(float a, float b);
-      static Vector Mul(float a, Vector v);
-      static Vector Less(Vector p, Vector q);
-      static Vector More(Vector p, Vector q);
+
 
 
 

@@ -12,6 +12,13 @@ Vector::Vector(float x, float y, float z)
     Z = z;
 }
 
+Vector::Vector(int x, int y, int z)
+{
+    X = (float) x;
+    Y = (float) y;
+    Z = (float) z;
+}
+
 void Vector::Print() {
     std::cout << X << "," << Y << "," << Z;
 }

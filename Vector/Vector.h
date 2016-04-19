@@ -8,6 +8,7 @@
  class Vector {
  public:
      Vector(float x, float y, float z);
+     Vector(int x, int y, int z);
 
      bool operator == (Vector v);
      bool operator != (Vector v);
