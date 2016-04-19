@@ -22,12 +22,12 @@
     return a - b;
 }
 
-float Math:: DotProduct(Vector p, Vector q)
+float Math:: Dot(Vector p, Vector q)
 {
     return Product(Dot(p.X, q.X), Dot(p.Y, q.Y), Dot(p.Z, q.Z));
 }
 
-Vector Math::CrossProduct(Vector p, Vector q) {
+Vector Math::Cross(Vector p, Vector q) {
     float x = Cross(Dot(p.Y, q.Z), Dot(p.Z, q.Y));
     float y = Cross(Dot(p.Z, q.X), Dot(p.X, q.Z));
     float z = Cross(Dot(p.X, q.Y), Dot(p.Y, q.X));
@@ -50,7 +50,7 @@ bool Math::IsOrthonormal(Vector p, Vector q) {
     if (p == q)
         i = 1;
 
-    return (DotProduct(p,q) == i);
+    return (Dot(p,q) == i);
 }
 
 bool Math::IsOrthonormal(std::vector<Vector> v)
@@ -75,6 +75,52 @@ bool Math::IsOrthonormal(std::vector<Vector> v)
         return IsOrthonormal(vectors);
     }
 }
+
+Vector Math::Proj(Vector p, Vector q) {
+   return Mul(Div(Dot(p, q), Sqr(Mag(q))), q);
+}
+
+Vector Math::Perp(Vector p, Vector q) {
+   return Less(p, Proj(p,q));
+}
+
+float Math::Sqr(float a) {
+    return powf(a, 2.0f);
+}
+
+float Math::Div(float a, float b) {
+    return a/b;
+}
+
+Vector Math::Mul(float a, Vector v) {
+    return Vector(Dot(v.X, a), Dot(v.Y, a), Dot(v.Z, a));
+}
+
+Vector Math::Less(Vector p, Vector q) {
+    return More(p, Mul(-1.0f, q));
+}
+
+Vector Math::More(Vector p, Vector q) {
+    return Vector(p.X + q.X, p.Y + q.Y, p.Z + q.Z);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
