@@ -4,7 +4,8 @@
 
 using namespace std;
 
-int main() {
+int main()
+{
     Vector p = Vector(2, 2, 1);
     Vector q = Vector(1, -2, 0);
 

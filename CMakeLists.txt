@@ -1,10 +1,39 @@
 cmake_minimum_required(VERSION 3.5)
 project(Math)
 
+#Version Number
+set(Math_VERSION_MAJOR 1)
+set(Math_Version_MINOR 0)
+
+configure_file(
+        "${PROJECT_SOURCE_DIR}/MathConfig.h.in"
+        "${PROJECT_BINARY_DIR}/MathConfig.h"
+        )
+
+include_directories("${PROJECT_BINARY_DIR}")
+#end Version Number
+
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp Vector/Math.cpp Vector/Math.h Vector/Vector.cpp Vector/Vector.h )
+set(SOURCE_FILES main.cpp )
+#add_library(Vector Vector/Math.cpp Vector/Math.h Vector/Vector.cpp Vector/Vector.h )
+
+
+
+# should we use our own math functions?
+option (USE_VECTORS
+        "Use tutorial provided math implementation" ON)
+
+# add the Vectors library?
+#
+if (USE_VECTORS)
+    include_directories("${PROJECT_SOURCE_DIR}/Vector")
+    add_subdirectory(Vector)
+    set (EXTRA_LIBS ${EXTRA_LIBS} Vector)
+endif (USE_VECTORS)
+
 add_executable(Math ${SOURCE_FILES})
+target_link_libraries(Math ${EXTRA_LIBS})
 
 if (CMAKE_VERSION VERSION_LESS 3.2)
     set(UPDATE_DISCONNECTED_IF_AVAILABLE "")
