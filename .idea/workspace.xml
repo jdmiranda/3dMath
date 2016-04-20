@@ -24,6 +24,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c75d2624-7642-4ef6-9858-755eec1efe78" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vector/Math3D.cpp" afterPath="$PROJECT_DIR$/Vector/Math3D.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vector/Math3D.h" afterPath="$PROJECT_DIR$/Vector/Math3D.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/math3d_tests.cpp" afterPath="$PROJECT_DIR$/tests/math3d_tests.cpp" />
     </list>
     <ignored path="Math.iws" />
@@ -58,8 +60,8 @@
       <file leaf-file-name="math3d_tests.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/math3d_tests.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="144" column="2" selection-start-line="144" selection-start-column="2" selection-end-line="144" selection-end-column="2" />
+            <state relative-caret-position="103">
+              <caret line="126" column="3" selection-start-line="126" selection-start-column="3" selection-end-line="126" selection-end-column="3" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -70,8 +72,8 @@
       <file leaf-file-name="Math3D.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vector/Math3D.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="127" column="1" selection-start-line="127" selection-start-column="1" selection-end-line="127" selection-end-column="1" />
+            <state relative-caret-position="154">
+              <caret line="117" column="27" selection-start-line="117" selection-start-column="27" selection-end-line="117" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -255,7 +257,7 @@
       <recent name="$PROJECT_DIR$/Vector_Test/basic_tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Google Test.math_tests.Orthogonalize">
+  <component name="RunManager" selected="Google Test.math_tests.Normalize01">
     <configuration default="false" name="math_tests.Normalize02" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Math" TARGET_NAME="math3d_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Math" RUN_TARGET_NAME="math3d_tests" TEST_CLASS="math_tests" TEST_METHOD="Normalize02" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
@@ -506,9 +508,9 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Google Test.math_tests.Orthogonalize" />
-        <item index="1" class="java.lang.String" itemvalue="Google Test.math_tests.Normalize02" />
-        <item index="2" class="java.lang.String" itemvalue="Google Test.math_tests.Normalize01" />
+        <item index="0" class="java.lang.String" itemvalue="Google Test.math_tests.Normalize01" />
+        <item index="1" class="java.lang.String" itemvalue="Google Test.math_tests.Orthogonalize" />
+        <item index="2" class="java.lang.String" itemvalue="Google Test.math_tests.Normalize02" />
       </list>
     </recent_temporary>
   </component>
@@ -526,17 +528,11 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="math3d_tests - 2016.04.19 at 19h 12m 58s.xml">
-      <configuration name="math3d_tests" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="math3d_tests - 2016.04.19 at 19h 13m 52s.xml">
-      <configuration name="math3d_tests" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
     <history-entry file="math_tests_Normalize01 - 2016.04.19 at 20h 52m 35s.xml">
       <configuration name="math_tests.Normalize01" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="math_tests_Normalize02 - 2016.04.19 at 20h 51m 47s.xml">
-      <configuration name="math_tests.Normalize02" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="math_tests_Normalize01 - 2016.04.19 at 21h 56m 47s.xml">
+      <configuration name="math_tests.Normalize01" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
     <history-entry file="math_tests_Normalize02 - 2016.04.19 at 20h 53m 28s.xml">
       <configuration name="math_tests.Normalize02" configurationId="CMakeGoogleTestRunConfigurationType" />
@@ -554,6 +550,12 @@
       <configuration name="math_tests.Orthogonalize" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
     <history-entry file="math_tests_Orthogonalize - 2016.04.19 at 21h 08m 37s.xml">
+      <configuration name="math_tests.Orthogonalize" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="math_tests_Orthogonalize - 2016.04.19 at 21h 55m 09s.xml">
+      <configuration name="math_tests.Orthogonalize" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="math_tests_Orthogonalize - 2016.04.19 at 21h 55m 20s.xml">
       <configuration name="math_tests.Orthogonalize" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
   </component>
@@ -608,13 +610,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Vector/Math3D.cpp</url>
-          <line>78</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
@@ -852,16 +847,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Vector/Math3D.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="127" column="1" selection-start-line="127" selection-start-column="1" selection-end-line="127" selection-end-column="1" />
+        <state relative-caret-position="154">
+          <caret line="117" column="27" selection-start-line="117" selection-start-column="27" selection-end-line="117" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/math3d_tests.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="144" column="2" selection-start-line="144" selection-start-column="2" selection-end-line="144" selection-end-column="2" />
+        <state relative-caret-position="103">
+          <caret line="126" column="3" selection-start-line="126" selection-start-column="3" selection-end-line="126" selection-end-column="3" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

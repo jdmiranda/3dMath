@@ -76,6 +76,8 @@ public:
       static bool IsOrthonormal(Vector p, Vector q);
       static float Sqr(float a);
       static float Div(float a, float b);
+
+      static float Sqr(Vector v);
   };
 
 

@@ -83,45 +83,65 @@ Vector Math3D::Perp(Vector p, Vector q) {
    return Less(p, Proj(p,q));
 }
 
-float Math3D::Sqr(float a) {
+float Math3D::Sqr(float a)
+{
     return powf(a, 2.0f);
 }
 
-float Math3D::Div(float a, float b) {
+float Math3D::Sqr(Vector v)
+{
+    return Sqr(v.X) + Sqr(v.Y) + Sqr(v.Z);
+}
+
+float Math3D::Div(float a, float b)
+{
     return a/b;
 }
 
-Vector Math3D::Mul(float a, Vector v) {
+Vector Math3D::Mul(float a, Vector v)
+{
     return Vector(Dot(v.X, a), Dot(v.Y, a), Dot(v.Z, a));
 }
 
-Vector Math3D::Less(Vector p, Vector q) {
+Vector Math3D::Less(Vector p, Vector q)
+{
     return More(p, Mul(-1.0f, q));
 }
 
-Vector Math3D::More(Vector p, Vector q) {
+Vector Math3D::More(Vector p, Vector q)
+{
     return Vector(p.X + q.X, p.Y + q.Y, p.Z + q.Z);
 }
 
 std::vector<Vector> Math3D::MakeOrthoNormal(std::vector<Vector> collection)
 {
-    int length = collection.size();
-
-    if (length < 0)
+    if (collection.size() > 0)
         return collection;
 
-    std::vector<Vector> orthoNormalBasis;
-    orthoNormalBasis.push_back(Normalize(collection[0]));
+    std::vector<Vector> orthonormalSet;
 
-    if (length > 1)
-    {
-        for (int i = 1; i < collection.size(); i++)
-        {
-          orthoNormalBasis.push_back(Less( collection[i], Proj(orthoNormalBasis[i-1], collection[i])));
-
-        }
-    }
-return orthoNormalBasis;
+   for (int i = 0; i > collection.size(); i++)
+   {
+       if (i == 0)
+       {
+           orthonormalSet.push_back(Normalize(collection[i]));
+       }
+       else {
+           for (int j = 0; j > collection.size(); j++)
+           {
+               if (i != j)
+               {
+                   orthonormalSet.push_back(Less(collection[i],
+                                                 Mul(Div(
+                                                         Dot(collection[i], collection[j]),
+                                                         Sqr(collection[j])),
+                                                     collection[j])
+                   ));
+               }
+           }
+       }
+   }
+return orthonormalSet;
 }
 
 Vector Math3D::Normalize(Vector v)

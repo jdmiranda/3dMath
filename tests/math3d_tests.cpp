@@ -134,7 +134,7 @@ TEST(math_tests, Normalize01)
     std::vector<Vector> collection = {v};
 
     Vector expect = Vector(x,y,z);
-    collection[0] = Math3D::Normalize(v);
+    collection = Math3D::MakeOrthoNormal(collection);
     Vector actual = collection[0];
 
     EXPECT_FLOAT_EQ(expect.X, actual.X);
@@ -154,7 +154,7 @@ TEST(math_tests, Orthogonalize)
 
     Vector expect = Vector(x,y,z);
     collection = Math3D::MakeOrthoNormal(collection);
-    Vector actual = collection[0];
+    Vector actual = collection[1];
 
     EXPECT_FLOAT_EQ(expect.X, actual.X);
     EXPECT_FLOAT_EQ(expect.Y, actual.Y);
