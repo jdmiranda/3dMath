@@ -136,6 +136,26 @@ TEST(math_tests, Normalize01)
     Vector expect = Vector(x,y,z);
     collection[0] = Math3D::Normalize(v);
     Vector actual = collection[0];
+
+    EXPECT_FLOAT_EQ(expect.X, actual.X);
+    EXPECT_FLOAT_EQ(expect.Y, actual.Y);
+    EXPECT_FLOAT_EQ(expect.Z, actual.Z);
+}
+
+TEST(math_tests, Orthogonalize)
+{
+    float x = -1;
+    float y = 1;
+    float z = -1;
+
+    Vector p = Vector(sqrtf(2.0f), sqrtf(2.0f), 0.0f);
+    Vector q = Vector (x,y,z);
+    std::vector<Vector> collection = {p,q};
+
+    Vector expect = Vector(x,y,z);
+    collection = Math3D::MakeOrthoNormal(collection);
+    Vector actual = collection[0];
+
     EXPECT_FLOAT_EQ(expect.X, actual.X);
     EXPECT_FLOAT_EQ(expect.Y, actual.Y);
     EXPECT_FLOAT_EQ(expect.Z, actual.Z);

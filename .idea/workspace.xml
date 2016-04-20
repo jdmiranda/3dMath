@@ -24,7 +24,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c75d2624-7642-4ef6-9858-755eec1efe78" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vector/Math3D.cpp" afterPath="$PROJECT_DIR$/Vector/Math3D.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/math3d_tests.cpp" afterPath="$PROJECT_DIR$/tests/math3d_tests.cpp" />
     </list>
     <ignored path="Math.iws" />
@@ -59,8 +58,8 @@
       <file leaf-file-name="math3d_tests.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/math3d_tests.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+            <state relative-caret-position="118">
+              <caret line="144" column="2" selection-start-line="144" selection-start-column="2" selection-end-line="144" selection-end-column="2" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -256,7 +255,19 @@
       <recent name="$PROJECT_DIR$/Vector_Test/basic_tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Google Test.math3d_tests">
+  <component name="RunManager" selected="Google Test.math_tests.Orthogonalize">
+    <configuration default="false" name="math_tests.Normalize02" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Math" TARGET_NAME="math3d_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Math" RUN_TARGET_NAME="math3d_tests" TEST_CLASS="math_tests" TEST_METHOD="Normalize02" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="math_tests.Normalize01" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Math" TARGET_NAME="math3d_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Math" RUN_TARGET_NAME="math3d_tests" TEST_CLASS="math_tests" TEST_METHOD="Normalize01" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="math_tests.Orthogonalize" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Math" TARGET_NAME="math3d_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Math" RUN_TARGET_NAME="math3d_tests" TEST_CLASS="math_tests" TEST_METHOD="Orthogonalize" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
@@ -478,7 +489,7 @@
       <envs />
       <method />
     </configuration>
-    <list size="10">
+    <list size="13">
       <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
       <item index="1" class="java.lang.String" itemvalue="Application.Math" />
       <item index="2" class="java.lang.String" itemvalue="Application.gmock" />
@@ -489,7 +500,17 @@
       <item index="7" class="java.lang.String" itemvalue="Google Test.example" />
       <item index="8" class="java.lang.String" itemvalue="Google Test.vector_tests" />
       <item index="9" class="java.lang.String" itemvalue="Google Test.math3d_tests" />
+      <item index="10" class="java.lang.String" itemvalue="Google Test.math_tests.Normalize02" />
+      <item index="11" class="java.lang.String" itemvalue="Google Test.math_tests.Normalize01" />
+      <item index="12" class="java.lang.String" itemvalue="Google Test.math_tests.Orthogonalize" />
     </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Google Test.math_tests.Orthogonalize" />
+        <item index="1" class="java.lang.String" itemvalue="Google Test.math_tests.Normalize02" />
+        <item index="2" class="java.lang.String" itemvalue="Google Test.math_tests.Normalize01" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -505,40 +526,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="math3d_tests - 2016.04.19 at 18h 19m 15s.xml">
-      <configuration name="math3d_tests" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
     <history-entry file="math3d_tests - 2016.04.19 at 19h 12m 58s.xml">
       <configuration name="math3d_tests" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
     <history-entry file="math3d_tests - 2016.04.19 at 19h 13m 52s.xml">
       <configuration name="math3d_tests" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="math3d_tests_Dot - 2016.04.19 at 18h 16m 28s.xml">
-      <configuration name="math3d_tests.Dot" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="math3d_tests_Dot - 2016.04.19 at 18h 16m 46s.xml">
-      <configuration name="math3d_tests.Dot" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="math3d_tests_Dot - 2016.04.19 at 18h 18m 12s.xml">
-      <configuration name="math3d_tests.Dot" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="math_tests_Normalize01 - 2016.04.19 at 18h 11m 31s.xml">
+    <history-entry file="math_tests_Normalize01 - 2016.04.19 at 20h 52m 35s.xml">
       <configuration name="math_tests.Normalize01" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="math_tests_Orthogonalize01 - 2016.04.19 at 17h 22m 33s.xml">
-      <configuration name="math_tests.Orthogonalize01" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="math_tests_Normalize02 - 2016.04.19 at 20h 51m 47s.xml">
+      <configuration name="math_tests.Normalize02" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="math_tests_Orthogonalize01 - 2016.04.19 at 17h 26m 44s.xml">
-      <configuration name="math_tests.Orthogonalize01" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="math_tests_Normalize02 - 2016.04.19 at 20h 53m 28s.xml">
+      <configuration name="math_tests.Normalize02" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="math_tests_Orthogonalize01 - 2016.04.19 at 18h 00m 08s.xml">
-      <configuration name="math_tests.Orthogonalize01" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="math_tests_Normalize02 - 2016.04.19 at 21h 02m 25s.xml">
+      <configuration name="math_tests.Normalize02" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="math_tests_Orthogonalize - 2016.04.19 at 21h 03m 56s.xml">
+      <configuration name="math_tests.Orthogonalize" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="math_tests_Orthogonalize - 2016.04.19 at 21h 06m 56s.xml">
+      <configuration name="math_tests.Orthogonalize" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="math_tests_Orthogonalize - 2016.04.19 at 21h 07m 29s.xml">
+      <configuration name="math_tests.Orthogonalize" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="math_tests_Orthogonalize - 2016.04.19 at 21h 08m 37s.xml">
+      <configuration name="math_tests.Orthogonalize" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -839,8 +860,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/math3d_tests.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        <state relative-caret-position="118">
+          <caret line="144" column="2" selection-start-line="144" selection-start-column="2" selection-end-line="144" selection-end-column="2" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
