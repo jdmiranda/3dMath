@@ -14,7 +14,7 @@
 public:
 
 	  /**
-	   * Returns a measure of difference between the directions in which two vectors point.
+	   * Returns a measure of difference between the directions in which two vectors point. cos a
 	   */
 	 static float Dot(Vector p, Vector q);
 

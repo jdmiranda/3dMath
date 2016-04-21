@@ -115,7 +115,7 @@ Vector Math3D::More(Vector p, Vector q)
 
 std::vector<Vector> Math3D::MakeOrthoNormal(std::vector<Vector> collection)
 {
-    if (collection.size() > 0)
+    if (collection.size() < 1)
         return collection;
 
     std::vector<Vector> orthonormalSet;
