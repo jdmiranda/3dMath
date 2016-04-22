@@ -84,7 +84,7 @@ TEST(math_tests, More)
     Vector q = Vector (2, 2, 2);
 
     Vector expect = Vector (3, 3, 3);
-    Vector actual = Math3D::More(p, q);
+    Vector actual = Math3D::Sum(p, q);
 
     EXPECT_FLOAT_EQ(expect.X, actual.X);
     EXPECT_FLOAT_EQ(expect.Y, actual.Y);
@@ -155,7 +155,6 @@ TEST(math_tests, Orthogonalize02)
     Vector expect = Vector(x,y,z);
     collection = Math3D::MakeOrthoNormal(collection);
     Vector actual = collection[1];
-
     EXPECT_FLOAT_EQ(expect.X, actual.X);
     EXPECT_FLOAT_EQ(expect.Y, actual.Y);
     EXPECT_FLOAT_EQ(expect.Z, actual.Z);

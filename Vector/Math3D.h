@@ -56,7 +56,7 @@ public:
       /**
        * Returns the result of two vectors.
        */
-      static Vector More(Vector p, Vector q);
+      static Vector Sum(Vector p, Vector q);
 /*
  *
  * Returns the orthonormal basis for the set using the Gram-Schmidt Orthogonalization

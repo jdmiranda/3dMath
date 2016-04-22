@@ -10,8 +10,8 @@
       <config projectName="Math" targetName="Math" />
       <config projectName="Math" targetName="vectorTests" />
       <config projectName="Math" targetName="Vector" />
-      <config projectName="Math" targetName="vector_tests" />
       <config projectName="Math" targetName="gmock_main" />
+      <config projectName="Math" targetName="vector_tests" />
       <config projectName="Math" targetName="math3d_tests" />
       <config projectName="Math" targetName="Tutorial" />
       <config projectName="Math" targetName="gtest" />
@@ -24,6 +24,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c75d2624-7642-4ef6-9858-755eec1efe78" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Math.iml" afterPath="$PROJECT_DIR$/.idea/Math.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vector/Math3D.cpp" afterPath="$PROJECT_DIR$/Vector/Math3D.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vector/Math3D.h" afterPath="$PROJECT_DIR$/Vector/Math3D.h" />
@@ -61,37 +62,55 @@
       <file leaf-file-name="math3d_tests.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/math3d_tests.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2265">
-              <caret line="151" column="30" selection-start-line="151" selection-start-column="30" selection-end-line="151" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-                <marker date="1461117722000" expanded="true" signature="1362:1704" placeholder="{...}" />
-                <marker date="1461117722000" expanded="true" signature="3225:3661" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Math3D.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Vector/Math3D.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="387">
+              <caret line="162" column="2" selection-start-line="162" selection-start-column="2" selection-end-line="162" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Math3D.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Math3D.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Vector/Math3D.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vector" pinned="false" current-in-tab="false">
+        <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/vector">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="1606" column="0" selection-start-line="1606" selection-start-column="0" selection-end-line="1606" selection-end-column="0" />
+              <folding>
+                <element signature="e#10470#10489#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Vector.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vector/Vector.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Math3D.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vector/Math3D.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
+            <state relative-caret-position="120">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
               <folding>
                 <element signature="e#472#525#0" expanded="false" />
                 <element signature="e#561#645#0" expanded="false" />
                 <element signature="e#709#773#0" expanded="false" />
-                <element signature="e#1284#1379#0" expanded="false" />
+                <element signature="e#1283#1378#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -126,9 +145,9 @@
         <option value="$PROJECT_DIR$/tests/vector_tests.cpp" />
         <option value="$PROJECT_DIR$/Vector/Vector.cpp" />
         <option value="$PROJECT_DIR$/Vector/Vector.h" />
-        <option value="$PROJECT_DIR$/tests/math3d_tests.cpp" />
-        <option value="$PROJECT_DIR$/Vector/Math3D.cpp" />
         <option value="$PROJECT_DIR$/Vector/Math3D.h" />
+        <option value="$PROJECT_DIR$/Vector/Math3D.cpp" />
+        <option value="$PROJECT_DIR$/tests/math3d_tests.cpp" />
       </list>
     </option>
   </component>
@@ -210,11 +229,7 @@
       <recent name="$PROJECT_DIR$/Vector_Test/basic_tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Google Test.math_tests.Orthogonalize02">
-    <configuration default="false" name="math_tests.Normalize02" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Math" TARGET_NAME="math3d_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Math" RUN_TARGET_NAME="math3d_tests" TEST_CLASS="math_tests" TEST_METHOD="Normalize02" TEST_MODE="SUITE_TEST">
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Google Test.math_tests.Orthogonalize03">
     <configuration default="false" name="math_tests.Normalize01" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Math" TARGET_NAME="math3d_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Math" RUN_TARGET_NAME="math3d_tests" TEST_CLASS="math_tests" TEST_METHOD="Normalize01" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
@@ -228,6 +243,10 @@
       <method />
     </configuration>
     <configuration default="false" name="math_tests.Orthogonalize02" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Math" TARGET_NAME="math3d_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Math" RUN_TARGET_NAME="math3d_tests" TEST_CLASS="math_tests" TEST_METHOD="Orthogonalize02" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="math_tests.Orthogonalize01" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Math" TARGET_NAME="math3d_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Math" RUN_TARGET_NAME="math3d_tests" TEST_CLASS="math_tests" TEST_METHOD="Orthogonalize01" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
     </configuration>
@@ -463,19 +482,19 @@
       <item index="7" class="java.lang.String" itemvalue="Google Test.example" />
       <item index="8" class="java.lang.String" itemvalue="Google Test.vector_tests" />
       <item index="9" class="java.lang.String" itemvalue="Google Test.math3d_tests" />
-      <item index="10" class="java.lang.String" itemvalue="Google Test.math_tests.Normalize02" />
-      <item index="11" class="java.lang.String" itemvalue="Google Test.math_tests.Normalize01" />
-      <item index="12" class="java.lang.String" itemvalue="Google Test.math_tests.Orthogonalize" />
-      <item index="13" class="java.lang.String" itemvalue="Google Test.math_tests.Orthogonalize03" />
-      <item index="14" class="java.lang.String" itemvalue="Google Test.math_tests.Orthogonalize02" />
+      <item index="10" class="java.lang.String" itemvalue="Google Test.math_tests.Normalize01" />
+      <item index="11" class="java.lang.String" itemvalue="Google Test.math_tests.Orthogonalize" />
+      <item index="12" class="java.lang.String" itemvalue="Google Test.math_tests.Orthogonalize03" />
+      <item index="13" class="java.lang.String" itemvalue="Google Test.math_tests.Orthogonalize02" />
+      <item index="14" class="java.lang.String" itemvalue="Google Test.math_tests.Orthogonalize01" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Google Test.math_tests.Orthogonalize02" />
-        <item index="1" class="java.lang.String" itemvalue="Google Test.math_tests.Orthogonalize03" />
-        <item index="2" class="java.lang.String" itemvalue="Google Test.math_tests.Normalize01" />
-        <item index="3" class="java.lang.String" itemvalue="Google Test.math_tests.Orthogonalize" />
-        <item index="4" class="java.lang.String" itemvalue="Google Test.math_tests.Normalize02" />
+        <item index="0" class="java.lang.String" itemvalue="Google Test.math_tests.Orthogonalize03" />
+        <item index="1" class="java.lang.String" itemvalue="Google Test.math_tests.Orthogonalize02" />
+        <item index="2" class="java.lang.String" itemvalue="Google Test.math_tests.Orthogonalize01" />
+        <item index="3" class="java.lang.String" itemvalue="Google Test.math_tests.Normalize01" />
+        <item index="4" class="java.lang.String" itemvalue="Google Test.math_tests.Orthogonalize" />
       </list>
     </recent_temporary>
   </component>
@@ -496,59 +515,68 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="math_tests_Normalize01 - 2016.04.19 at 21h 56m 47s.xml">
-      <configuration name="math_tests.Normalize01" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="math_tests_Orthogonalize - 2016.04.19 at 21h 06m 56s.xml">
-      <configuration name="math_tests.Orthogonalize" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="math_tests_Orthogonalize - 2016.04.19 at 21h 07m 29s.xml">
-      <configuration name="math_tests.Orthogonalize" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="math_tests_Orthogonalize - 2016.04.19 at 21h 08m 37s.xml">
-      <configuration name="math_tests.Orthogonalize" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="math_tests_Orthogonalize - 2016.04.19 at 21h 55m 09s.xml">
-      <configuration name="math_tests.Orthogonalize" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="math_tests_Orthogonalize - 2016.04.19 at 21h 55m 20s.xml">
-      <configuration name="math_tests.Orthogonalize" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="math_tests_Orthogonalize02 - 2016.04.19 at 22h 05m 52s.xml">
+    <history-entry file="math_tests_Orthogonalize02 - 2016.04.22 at 17h 21m 15s.xml">
       <configuration name="math_tests.Orthogonalize02" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="math_tests_Orthogonalize03 - 2016.04.19 at 22h 02m 07s.xml">
+    <history-entry file="math_tests_Orthogonalize02 - 2016.04.22 at 17h 22m 39s.xml">
+      <configuration name="math_tests.Orthogonalize02" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="math_tests_Orthogonalize02 - 2016.04.22 at 17h 23m 20s.xml">
+      <configuration name="math_tests.Orthogonalize02" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="math_tests_Orthogonalize02 - 2016.04.22 at 17h 56m 49s.xml">
+      <configuration name="math_tests.Orthogonalize02" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="math_tests_Orthogonalize02 - 2016.04.22 at 18h 05m 19s.xml">
+      <configuration name="math_tests.Orthogonalize02" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="math_tests_Orthogonalize02 - 2016.04.22 at 18h 07m 44s.xml">
+      <configuration name="math_tests.Orthogonalize02" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="math_tests_Orthogonalize02 - 2016.04.22 at 18h 08m 07s.xml">
+      <configuration name="math_tests.Orthogonalize02" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="math_tests_Orthogonalize02 - 2016.04.22 at 18h 08m 53s.xml">
+      <configuration name="math_tests.Orthogonalize02" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="math_tests_Orthogonalize02 - 2016.04.22 at 18h 09m 05s.xml">
+      <configuration name="math_tests.Orthogonalize02" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="math_tests_Orthogonalize03 - 2016.04.22 at 18h 09m 21s.xml">
       <configuration name="math_tests.Orthogonalize03" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="math_tests_Orthogonalize03 - 2016.04.19 at 22h 05m 07s.xml">
-      <configuration name="math_tests.Orthogonalize03" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="math_tests_Orthogonalize03 - 2016.04.19 at 22h 05m 38s.xml">
-      <configuration name="math_tests.Orthogonalize03" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2536349" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3260274" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2536349" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39863014" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -588,16 +616,32 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/tests/math3d_tests.cpp</url>
-          <line>172</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/Vector/Math3D.cpp</url>
+          <line>135</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="12" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/math3d_tests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2265">
+          <caret line="151" column="30" selection-start-line="151" selection-start-column="30" selection-end-line="151" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
@@ -610,11 +654,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2265">
           <caret line="151" column="30" selection-start-line="151" selection-start-column="30" selection-end-line="151" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <marker date="1461117722000" expanded="true" signature="1362:1704" placeholder="{...}" />
-            <marker date="1461117722000" expanded="true" signature="3225:3661" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -634,7 +674,7 @@
             <element signature="e#472#525#0" expanded="false" />
             <element signature="e#561#645#0" expanded="false" />
             <element signature="e#709#773#0" expanded="false" />
-            <element signature="e#1284#1379#0" expanded="false" />
+            <element signature="e#1283#1378#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -663,7 +703,7 @@
             <element signature="e#472#525#0" expanded="false" />
             <element signature="e#561#645#0" expanded="false" />
             <element signature="e#709#773#0" expanded="false" />
-            <element signature="e#1284#1379#0" expanded="false" />
+            <element signature="e#1283#1378#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -694,13 +734,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Vector/Math" />
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/vector">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2019">
-          <caret line="264" column="0" selection-start-line="264" selection-start-column="0" selection-end-line="264" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/VectorTests/MathTest.h" />
     <entry file="file://$PROJECT_DIR$/VectorTests/MathTest.cpp" />
     <entry file="file://$PROJECT_DIR$/tests/Math_Test.cpp" />
@@ -803,13 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Vector/Vector.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/vector_tests.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -817,36 +843,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Vector/Math3D.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="e#472#525#0" expanded="false" />
+            <element signature="e#561#645#0" expanded="false" />
+            <element signature="e#709#773#0" expanded="false" />
+            <element signature="e#1283#1378#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vector/Vector.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/vector">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="1606" column="0" selection-start-line="1606" selection-start-column="0" selection-end-line="1606" selection-end-column="0" />
+          <folding>
+            <element signature="e#10470#10489#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/math3d_tests.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2265">
-          <caret line="151" column="30" selection-start-line="151" selection-start-column="30" selection-end-line="151" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <marker date="1461117722000" expanded="true" signature="1362:1704" placeholder="{...}" />
-            <marker date="1461117722000" expanded="true" signature="3225:3661" placeholder="{...}" />
-          </folding>
+        <state relative-caret-position="387">
+          <caret line="162" column="2" selection-start-line="162" selection-start-column="2" selection-end-line="162" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Vector/Math3D.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="390">
+          <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vector/Math3D.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
-          <folding>
-            <element signature="e#472#525#0" expanded="false" />
-            <element signature="e#561#645#0" expanded="false" />
-            <element signature="e#709#773#0" expanded="false" />
-            <element signature="e#1284#1379#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>

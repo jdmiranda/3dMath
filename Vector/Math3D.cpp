@@ -105,40 +105,39 @@ Vector Math3D::Mul(float a, Vector v)
 
 Vector Math3D::Less(Vector p, Vector q)
 {
-    return More(p, Mul(-1.0f, q));
+    return Sum(p, Mul(-1.0f, q));
 }
 
-Vector Math3D::More(Vector p, Vector q)
+Vector Math3D::Sum(Vector p, Vector q)
 {
     return Vector(p.X + q.X, p.Y + q.Y, p.Z + q.Z);
 }
 
 std::vector<Vector> Math3D::MakeOrthoNormal(std::vector<Vector> collection)
 {
-    if (collection.size() < 1)
+   if (collection.size() < 1)
         return collection;
 
     std::vector<Vector> orthonormalSet;
 
-   for (int i = 0; i > collection.size(); i++)
+   for (int i = 0; i < collection.size(); i++)
    {
+       Vector p = collection[i];
        if (i == 0)
        {
-           orthonormalSet.push_back(Normalize(collection[i]));
+           orthonormalSet.push_back(Normalize(p));
        }
        else {
-           for (int j = 0; j > collection.size(); j++)
+           Vector sum = Vector(0,0,0);
+           for (int j = 0; j < i ; j++)
            {
-               if (i != j)
-               {
-                   orthonormalSet.push_back(Less(collection[i],
-                                                 Mul(Div(
-                                                         Dot(collection[i], collection[j]),
-                                                         Sqr(collection[j])),
-                                                     collection[j])
-                   ));
-               }
+               Vector q = orthonormalSet[j];
+               Vector projection = Proj(p,q);
+               sum = Sum(sum, projection);
            }
+
+           Vector y = Less(p,sum );
+           orthonormalSet.push_back(y);
        }
    }
 return orthonormalSet;
